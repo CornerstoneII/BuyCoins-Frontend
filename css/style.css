@@ -69,6 +69,41 @@ body {
   background-color: darkblue;
 }
 
+.footer-container {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  display: -moz-box;
+  display: -moz-flex;
+  -ms-box-orient: horizontal;
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+.fa-github {
+  color: #d1d5da;
+  padding-top: 4px;
+}
+
+.wrap li {
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+.wrap li a:link {
+  text-decoration: none;
+  color: #0366d6;
+}
+
 @media screen and (min-width: 767px) {
   .main-container {
     display: grid;
