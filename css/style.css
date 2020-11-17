@@ -12,13 +12,28 @@ body {
   background-color: #333;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav input {
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+}
+
+.main-nav input[type=text] {
+  padding: 6px;
+  border: 1px solid #e1e4e8;
+  margin-top: 15px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .main-nav a:not(:first-child) {
@@ -31,7 +46,7 @@ body {
 
 .main-nav-right a:first-child,
 .main-nav-right a:nth-of-type(2) {
-  padding-top: 24px;
+  padding-top: 26px;
 }
 
 .avatar {
@@ -42,7 +57,7 @@ body {
 
 .avatar-caret,
 .add-caret {
-  top: 25px;
+  top: 27px;
   position: absolute;
   padding-left: 4px;
 }
@@ -89,7 +104,7 @@ body {
   margin: 5px;
 }
 
-.fa-github {
+.f-github {
   color: #d1d5da;
   padding-top: 4px;
 }
@@ -112,7 +127,7 @@ body {
 }
 
 .header-container a {
-  padding: 8px 16px;
+  padding: 35px 16px 16px;
 }
 
 .header-container i {
