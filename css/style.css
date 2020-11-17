@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,4 +23,45 @@ body {
 
 .main-nav-right {
   float: right;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+  'header-nav header-nav header-nav header-nav header-nav header-nav'
+  'profile-info-left repository-summary-right repository-summary-right repository-summary-right repository-summary-right repository-summary-right';
+}
+
+.header-nav {
+  grid-area: header-nav;
+  background-color: chartreuse;
+}
+
+.profile-info-left {
+  grid-area: profile-info-left;
+  background-color: cornflowerblue;
+}
+
+.repository-summary-right {
+  grid-area: repository-summary-right;
+  background-color: darkblue;
+}
+
+@media screen and (min-width: 767px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-container div:nth-of-type(1) {
+    order: 2;
+  }
+
+  .main-container div:nth-of-type(2) {
+    order: 1;
+  }
+
+  .main-container :nth-of-type(3) {
+    order: 3;
+  }
 }
