@@ -104,6 +104,25 @@ body {
   color: #0366d6;
 }
 
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container a {
+  padding: 8px 16px;
+}
+
+.header-container i {
+  padding-right: 6px;
+}
+
+.header-container a:link {
+  text-decoration: none;
+  color: #d1d5da;
+}
+
 @media screen and (min-width: 767px) {
   .main-container {
     display: grid;
