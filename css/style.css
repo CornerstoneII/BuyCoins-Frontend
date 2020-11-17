@@ -18,11 +18,33 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
+}
+
+.main-nav a:not(:first-child) {
+  padding-top: 24px;
 }
 
 .main-nav-right {
   float: right;
+}
+
+.main-nav-right a:first-child,
+.main-nav-right a:nth-of-type(2) {
+  padding-top: 24px;
+}
+
+.avatar {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+
+.avatar-caret,
+.add-caret {
+  top: 25px;
+  position: absolute;
+  padding-left: 4px;
 }
 
 .main-container {
