@@ -200,15 +200,15 @@ body {
 }
 
 .profile,
-.fa-smile {
+.user-status {
   border: 1px solid #959da5;
   background-color: #fff;
 }
 
-.fa-smile {
+.user-status {
   position: absolute;
   bottom: 239px;
-  right: 78px;
+  right: 11px;
   padding: 10px;
   font-size: 14px;
   border-radius: 50%;
@@ -392,5 +392,40 @@ footer div {
 
   .contact-section div:nth-of-type(3) {
     grid-area: contact-details;
+  }
+
+  .profile {
+    height: 90px;
+  }
+
+  .img-name-status {
+    display: grid;
+    grid-template-areas:
+    'profile display-name-bio . . .'
+    'user-status user-status user-status user-status user-status'
+    'bio-text bio-text bio-text bio-text bio-text';
+  }
+
+  .img-name-status img:nth-of-type(1) {
+    grid-area: profile;
+    border: 1px solid #e1e4e8;
+    margin-bottom: 24px;
+  }
+
+  .img-name-status div:nth-of-type(1) {
+    grid-area: display-name-bio;
+    padding-left: 20px;
+  }
+
+  .img-name-status div:nth-of-type(2) {
+    grid-area: bio-text;
+    margin-top: 16px;
+  }
+
+  .img-name-status a:nth-of-type(1) {
+    grid-area: user-status;
+    position: static;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
   }
 }
