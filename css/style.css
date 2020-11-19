@@ -355,12 +355,42 @@ footer div {
     grid-area: profile-info-left;
   }
 
-  .main-container :nth-of-type(3) {
+  .main-container div:nth-of-type(3) {
     grid-area: repository-summary-right;
   }
 
   .highlight-section,
   .org-section {
     display: none;
+  }
+
+  .contact-details li:nth-of-type(1),
+  .contact-details li:nth-of-type(2),
+  .contact-details li:nth-of-type(5) {
+    display: none;
+  }
+
+  .follow-fav {
+    margin-bottom: 0;
+  }
+
+  .contact-section {
+    display: grid;
+    grid-template-areas:
+    'edit-button edit-button edit-button edit-button edit-button'
+    'contact-details contact-details contact-details contact-details contact-details'
+    'follow-fav follow-fav follow-fav follow-fav follow-fav';
+  }
+
+  .contact-section div:nth-of-type(1) {
+    grid-area: edit-button;
+  }
+
+  .contact-section div:nth-of-type(2) {
+    grid-area: follow-fav;
+  }
+
+  .contact-section div:nth-of-type(3) {
+    grid-area: contact-details;
   }
 }
