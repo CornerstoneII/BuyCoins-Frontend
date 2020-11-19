@@ -29,9 +29,9 @@
           <div class="header-nav">
             <nav class="header-container">
               <a href="#"><i class="fa fa-book"></i></i><span>Overview</span></a>
-              <a href="#"><i class="fa fa-folder-o"></i><span>Repositories</span><span class="h-count">92</span></a>
+              <a href="#"><i class="far fa-folder"></i><span>Repositories</span><span class="h-count">92</span></a>
               <a href="#"><i class="fa fa-cube"></i><span>Packages</span></a>
-              <a href="#"><i class="fa fa-file-text-o"></i></i><span>Projects</span></a>
+              <a href="#"><i class="far fa-file-alt"></i></i><span>Projects</span></a>
             </nav>
           </div>
 
@@ -91,64 +91,72 @@
 
           <div class="repository-summary-right">
 
-            <div class="find-section"></div>
+            <div class="find-section">
+              <form action="/">
+
+                <div class="search-repo">
+                  <input type="text" placeholder="Find a repository...">
+                </div>
+
+                <div class="type-lang-new">
+                  <details>
+                    <summary>Type: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <ul>
+                      <li>Select type</li>
+                      <li>All</li>
+                      <li>Public</li>
+                      <li>Private</li>
+                      <li>Sources</li>
+                      <li>Forks</li>
+                      <li>Archived</li>
+                      <li>Mirrors</li>
+                    </ul>
+                  </details>
+
+                  <details>
+                    <summary>Language: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <ul>
+                      <li>Select language</li>
+                      <li>All</li>
+                      <li>Ruby</li>
+                      <li>Javascript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>PHP</li>
+                      <li>Python</li>
+                      <li>Shell</li>
+                      <li>Typescript</li>
+                    </ul>
+                  </details>
+
+                  <button class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
+                </div>
+              </form>
+            </div>
 
             <div class="user-repo-list">
               <ul class="repofilter">
                 <li class="repo-item">
 
                   <div class="about-repo">
-                    <form action="/">
-
-                      <div class="search-repo">
-                        <input type="text" placeholder="Find a repository...">
-                      </div>
-
-                      <div class="type-lang-new">
-                        <details>
-                          <summary>Type: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
-                          <ul>
-                            <li>Select type</li>
-                            <li>All</li>
-                            <li>Public</li>
-                            <li>Private</li>
-                            <li>Sources</li>
-                            <li>Forks</li>
-                            <li>Archived</li>
-                            <li>Mirrors</li>
-                          </ul>
-                        </details>
-
-                        <details>
-                          <summary>Language: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
-                          <ul>
-                            <li>Select language</li>
-                            <li>All</li>
-                            <li>Ruby</li>
-                            <li>Javascript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                            <li>Shell</li>
-                            <li>Typescript</li>
-                          </ul>
-                        </details>
-
-                        <a href="#" class="new-repo-btn"></a>
-                      </div>
-                    </form>
+                    <div class="about-title">
+                      <h3><a href="#">Title</a></h3>
+                    </div>
+                    <div class="about-date">
+                      <span class="lang">Language</span>star-icon<span class="star-count">int</span>fork-icon<span class="star-count">int</span><span class="date">alpha-numeric</span>
+                    </div>
                   </div>
 
-                  <div class="star-icon"></div>
+                  <div class="about-star"></div>
 
                 </li>
               </ul>
 
               <div class="paginate-repo-list">
                 <button class="prev-btn">Previous</button>
-                <a href="#" class="next-btn">Next</a>
+                <button class="next-btn">Next</button>
               </div>
+
             </div>
 
           </div>
