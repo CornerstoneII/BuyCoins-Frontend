@@ -168,6 +168,10 @@ body {
   position: relative;
 }
 
+.img-name-status img {
+  display: block;
+}
+
 .profile,
 .fa-smile {
   border: 1px solid #959da5;
@@ -176,11 +180,32 @@ body {
 
 .fa-smile {
   position: absolute;
-  bottom: 145px;
-  right: 57px;
+  bottom: 239px;
+  right: 78px;
   padding: 10px;
   font-size: 14px;
   border-radius: 50%;
+}
+
+.display-name-bio h1 {
+  font-size: 26px;
+}
+
+.git-name {
+  font-size: 20px;
+  font-weight: 300;
+  color: #586069;
+}
+
+.display-name-bio,
+.git-name {
+  display: block;
+}
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
 }
 
 footer div {
