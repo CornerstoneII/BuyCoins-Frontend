@@ -24,10 +24,14 @@ body {
 
 .main-nav input[type=text] {
   padding: 6px;
-  border: 1px solid #e1e4e8;
   margin-top: 15px;
   background-color: #333;
   border-radius: 5px;
+}
+
+.main-nav input[type=text],
+.pro span {
+  border: 1px solid #e1e4e8;
 }
 
 ::-webkit-input-placeholder {
@@ -75,6 +79,15 @@ body {
 
 .profile-info-left {
   grid-area: profile-info-left;
+}
+
+.highlight-section {
+  padding-top: 16px;
+}
+
+.highlight-section h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .repository-summary-right {
@@ -138,12 +151,15 @@ body {
 }
 
 .header-container span,
-.contact-item span {
+.contact-item span,
+.vault a {
   color: #24292e;
 }
 
 .header-icon,
-.contact-icon {
+.contact-icon,
+.highl-icon,
+.ff-icon {
   color: #959da5;
 }
 
@@ -245,7 +261,8 @@ body {
 .fa-user-friends,
 .fa-star,
 .pr-5,
-.contact-item i {
+.contact-item i,
+.high-list a i {
   padding-right: 5px;
 }
 
@@ -256,12 +273,36 @@ body {
 }
 
 .contact-details {
+  font-size: 14px;
+  line-height:180%
+}
+
+.high-list,
+.contact-details {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.high-list {
+  line-height: 2;
   font-size: 14px;
-  line-height:180%
+}
+
+.vault a:link {
+  text-decoration: none;
+}
+
+.vault,
+.pro {
+  margin-top: 8px;
+}
+
+.pro span {
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 20px;
 }
 
 footer div {
