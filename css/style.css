@@ -226,6 +226,21 @@ body {
   background-color: #f3f4f6;
 }
 
+.ff-link span {
+  color: #586069;
+  font-size: 14px;
+}
+
+.follow-fav a:link {
+  text-decoration: none;
+}
+
+.fa-user-friends,
+.fa-star,
+.pr-5 {
+  padding-right: 5px;
+}
+
 footer div {
   padding-bottom: 40px;
   padding-top: 25px;
