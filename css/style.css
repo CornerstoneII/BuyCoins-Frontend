@@ -85,9 +85,18 @@ body {
   padding-top: 16px;
 }
 
-.highlight-section h2 {
+.highlight-section h2,
+.org-section h2 {
   font-size: 16px;
   margin-bottom: 8px;
+}
+
+.org-img {
+  height: 30px;
+}
+
+.org-section a img:nth-of-type(1) {
+  border-radius: 20%;
 }
 
 .repository-summary-right {
