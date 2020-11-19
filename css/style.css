@@ -358,4 +358,9 @@ footer div {
   .main-container :nth-of-type(3) {
     grid-area: repository-summary-right;
   }
+
+  .highlight-section,
+  .org-section {
+    display: none;
+  }
 }
