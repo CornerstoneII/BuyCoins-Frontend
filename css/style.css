@@ -75,7 +75,6 @@ body {
 
 .profile-info-left {
   grid-area: profile-info-left;
-  background-color: cornflowerblue;
 }
 
 .repository-summary-right {
@@ -142,6 +141,10 @@ body {
   color: #24292e;
 }
 
+.header-icon {
+  color: #959da5;
+}
+
 .repo-text {
   padding-right: 12px;
 }
@@ -150,6 +153,34 @@ body {
   padding: 2px 8px;
   background-color: #d1d5da80;
   border-radius: 10px;
+}
+
+.profile-info {
+  padding: 0 40px;
+}
+
+.profile {
+  height: 300px;
+  border-radius: 50%;
+}
+
+.img-name-status {
+  position: relative;
+}
+
+.profile,
+.fa-smile {
+  border: 1px solid #959da5;
+  background-color: #fff;
+}
+
+.fa-smile {
+  position: absolute;
+  bottom: 145px;
+  right: 57px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 50%;
 }
 
 footer div {
