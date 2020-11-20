@@ -101,7 +101,49 @@ body {
 
 .repository-summary-right {
   grid-area: repository-summary-right;
-  background-color: darkblue;
+}
+
+.find-form > div,
+.type-lang-new > details {
+  display: inline;
+}
+
+.find-form > div {
+  padding: 20px 0;
+}
+
+.type-btn > summary::-webkit-details-marker {
+  display: none;
+}
+
+.type-btn ul {
+  list-style: none;
+}
+
+.btn-type,
+.btn-lang {
+  padding: 5px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.btn-type {
+  background-color: #f3f4f6;
+}
+
+.btn-lang {
+  background-color: #fafbfc;
+}
+
+.type-caret {
+  padding-left: 10px;
+}
+
+.find-section {
+  padding: 40px;
 }
 
 .footer-container {
@@ -183,19 +225,22 @@ body {
 }
 
 .profile-info {
-  padding: 0 40px;
-}
-
-.profile {
-  height: 300px;
-  border-radius: 50%;
+  padding: 0 30px;
 }
 
 .img-name-status {
   position: relative;
+  display: inline-block;
+  /* max-width: 1440px; */
 }
 
-.img-name-status img {
+.img-name-status > a {
+  text-align: center;
+}
+
+.profile {
+  width: 80%;
+  border-radius: 50%;
   display: block;
 }
 
@@ -207,8 +252,8 @@ body {
 
 .user-status {
   position: absolute;
-  bottom: 239px;
-  right: 11px;
+  bottom: 250px;
+  right: 90px;
   padding: 10px;
   font-size: 14px;
   border-radius: 50%;
@@ -394,10 +439,6 @@ footer div {
     grid-area: contact-details;
   }
 
-  .profile {
-    height: 90px;
-  }
-
   .img-name-status {
     display: grid;
     grid-template-areas:
@@ -427,5 +468,6 @@ footer div {
     position: static;
     border: 1px solid #e1e4e8;
     border-radius: 6px;
+    text-align: left;
   }
 }

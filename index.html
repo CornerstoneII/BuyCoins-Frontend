@@ -108,15 +108,15 @@
           <div class="repository-summary-right">
 
             <div class="find-section">
-              <form action="/">
+              <form action="/" class="find-form">
 
                 <div class="search-repo">
                   <input type="text" placeholder="Find a repository...">
                 </div>
 
                 <div class="type-lang-new">
-                  <details>
-                    <summary>Type: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                  <details class="type-btn">
+                    <summary role="button" class="btn-type">Type: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
                     <ul>
                       <li>Select type</li>
                       <li>All</li>
@@ -129,8 +129,8 @@
                     </ul>
                   </details>
 
-                  <details>
-                    <summary>Language: All<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                  <details class="type-btn">
+                    <summary role="button" class="btn-lang">Language: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
                     <ul>
                       <li>Select language</li>
                       <li>All</li>
@@ -147,6 +147,7 @@
 
                   <button class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
                 </div>
+
               </form>
             </div>
 
