@@ -103,13 +103,58 @@ body {
   grid-area: repository-summary-right;
 }
 
-.find-form > div,
-.type-lang-new > details {
+.find-form div {
+  padding: 10px;
+  border: 1px solid blue;
+  display: inline;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.type-lang-new details {
   display: inline;
 }
 
-.find-form > div {
-  padding: 20px 0;
+.search-input {
+  width: calc(90% - 5px - 61%);
+}
+
+.repo-summ-container {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid red;
+}
+
+.search-input {
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+}
+
+.type-lang-new button {
+  padding: 6px 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.type-lang-new {
+  margin-left: 5px;
+}
+
+.new-repo-btn i {
+  margin-right: 5px;
+}
+
+.find-section {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .type-btn > summary::-webkit-details-marker {
@@ -118,6 +163,7 @@ body {
 
 .type-btn ul {
   list-style: none;
+  font-size: 14px;
 }
 
 .btn-type,
@@ -140,10 +186,6 @@ body {
 
 .type-caret {
   padding-left: 10px;
-}
-
-.find-section {
-  padding: 40px;
 }
 
 .footer-container {
@@ -231,7 +273,6 @@ body {
 .img-name-status {
   position: relative;
   display: inline-block;
-  /* max-width: 1440px; */
 }
 
 .img-name-status > a {
@@ -239,7 +280,7 @@ body {
 }
 
 .profile {
-  width: 80%;
+  width: 85%;
   border-radius: 50%;
   display: block;
 }
@@ -253,7 +294,7 @@ body {
 .user-status {
   position: absolute;
   bottom: 250px;
-  right: 90px;
+  right: 85px;
   padding: 10px;
   font-size: 14px;
   border-radius: 50%;
@@ -380,6 +421,15 @@ footer div {
 
   .main-container :nth-of-type(3) {
     order: 3;
+  }
+
+  .user-status {
+    position: absolute;
+    bottom: 293px;
+    right: 42px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50%;
   }
 }
 

@@ -107,73 +107,78 @@
 
           <div class="repository-summary-right">
 
-            <div class="find-section">
-              <form action="/" class="find-form">
+            <div class="repo-summ-container">
+              <div class="find-section">
+                <form action="/" class="find-form">
 
-                <div class="search-repo">
-                  <input type="text" placeholder="Find a repository...">
-                </div>
-
-                <div class="type-lang-new">
-                  <details class="type-btn">
-                    <summary role="button" class="btn-type">Type: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
-                    <ul>
-                      <li>Select type</li>
-                      <li>All</li>
-                      <li>Public</li>
-                      <li>Private</li>
-                      <li>Sources</li>
-                      <li>Forks</li>
-                      <li>Archived</li>
-                      <li>Mirrors</li>
-                    </ul>
-                  </details>
-
-                  <details class="type-btn">
-                    <summary role="button" class="btn-lang">Language: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
-                    <ul>
-                      <li>Select language</li>
-                      <li>All</li>
-                      <li>Ruby</li>
-                      <li>Javascript</li>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>PHP</li>
-                      <li>Python</li>
-                      <li>Shell</li>
-                      <li>Typescript</li>
-                    </ul>
-                  </details>
-
-                  <button class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
-                </div>
-
-              </form>
-            </div>
-
-            <div class="user-repo-list">
-              <ul class="repofilter">
-                <li class="repo-item">
-
-                  <div class="about-repo">
-                    <div class="about-title">
-                      <h3><a href="#">Title</a></h3>
-                    </div>
-                    <div class="about-date">
-                      <span class="lang">Language</span>star-icon<span class="star-count">int</span>fork-icon<span class="star-count">int</span><span class="date">alpha-numeric</span>
-                    </div>
+                  <div class="search-repo">
+                    <input class="search-input" type="text" placeholder="Find a repository...">
                   </div>
 
-                  <div class="about-star"></div>
+                  <div class="type-lang-new">
+                    <details class="type-btn">
+                      <summary role="button" class="btn-type">Type: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
+                      <ul>
+                        <li>Select type</li>
+                        <li>All</li>
+                        <li>Public</li>
+                        <li>Private</li>
+                        <li>Sources</li>
+                        <li>Forks</li>
+                        <li>Archived</li>
+                        <li>Mirrors</li>
+                      </ul>
+                    </details>
 
-                </li>
-              </ul>
+                    <details class="type-btn">
+                      <summary role="button" class="btn-lang">Language: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
+                      <ul>
+                        <li>Select language</li>
+                        <li>All</li>
+                        <li>Ruby</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>Shell</li>
+                        <li>Typescript</li>
+                      </ul>
+                    </details>
 
-              <div class="paginate-repo-list">
-                <button class="prev-btn">Previous</button>
-                <button class="next-btn">Next</button>
+                    <button class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
+                  </div>
+
+                </form>
               </div>
 
+              <div class="user-repo-list">
+                <ul class="repofilter">
+                  <li class="repo-item">
+
+                    <div class="about-repo">
+
+                      <div class="about-title">
+                        <h3><a href="#">Title</a></h3>
+                      </div>
+
+                      <div class="about-date">
+                        <span class="lang">Language</span>star-icon<span class="star-count">int</span>fork-icon<span class="star-count">int</span><span class="date">alpha-numeric</span>
+                      </div>
+
+                    </div>
+
+                    <div class="about-star"></div>
+
+                  </li>
+                </ul>
+
+                <div class="paginate-repo-list">
+                  <button class="prev-btn">Previous</button>
+                  <button class="next-btn">Next</button>
+                </div>
+
+              </div>
             </div>
 
           </div>
