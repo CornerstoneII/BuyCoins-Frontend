@@ -431,6 +431,10 @@ footer div {
     font-size: 14px;
     border-radius: 50%;
   }
+
+  .main-nav-mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -520,4 +524,40 @@ footer div {
     border-radius: 6px;
     text-align: left;
   }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav-mobile {
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .icon {
+    float: left;
+  }
+
+  .main-nav-right-mobile {
+    float: right;
+  }
+
+  .nav-left-mobile {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-nav-mobile a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+  }
+
+  .main-nav-mobile ul{
+    display: inline;
+  }
+
 }
