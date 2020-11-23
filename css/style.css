@@ -407,6 +407,55 @@ body {
   border-radius: 20px;
 }
 
+.repofilter {
+  padding: 0;
+  margin: 0;
+}
+
+.repofilter li {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.repo-item {
+  margin-right: 10px;
+}
+
+.title h3 a {
+  text-decoration: none;
+}
+
+.about-repo {
+  width: 80%;
+}
+
+.about-star {
+  border: 1px solid blue;
+  width: 20%;
+  position: relative;
+}
+
+.about-info {
+  font-size: 14px;
+}
+
+.about-lang,
+.star-count,
+.fa-code-fork {
+  padding-right: 6px;
+}
+
+.fork-count {
+  margin-right: 8px;
+}
+
+.right-float {
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  top: 50px;
+}
+
 footer div {
   padding-bottom: 40px;
   padding-top: 25px;
@@ -650,7 +699,9 @@ footer div {
   }
 
   .search-repo input {
-    width: 100%;
+    width: 93%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .type-lang-new {
@@ -660,11 +711,12 @@ footer div {
 
   .type-lang-new {
     display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .type-lang-new button {
     float: right;
-    margin-right: 20px;
   }
 
   .md-d-none {
