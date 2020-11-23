@@ -12,14 +12,15 @@ request.onload = function () {
   var statusHTML = '';
   $.each(data, function(i, status) {
     statusHTML += '<li class="repo-item">';
-    statusHTML += '<div class="about-repo">';
-    statusHTML += '<div class="about-name">';
-    statusHTML += '<div class="name">';
 
+    statusHTML += '<div class="about-repo">';
+
+    statusHTML += '<div class="about-name">';
+
+    statusHTML += '<div class="name">';
     statusHTML += '<h3>';
     statusHTML += '<a href="#" class="title-name">' + status.name + '</a>';
     statusHTML += '</h3>';
-
     statusHTML += '</div>';
 
     statusHTML += '<div class="about-description">';
@@ -27,19 +28,39 @@ request.onload = function () {
     statusHTML += '</div>';
 
     statusHTML += '<div class="about-info">';
+    statusHTML += '<span class="about-lang">'+ status.language +'</span>';
 
-    statusHTML += '<span class="about-lang">' + status.languages + '</span>';
-    statusHTML += '<span class="star-count">' + status.stargazers_count + '</span>';
-    statusHTML += '<span class="fork-count">' + status.forks_count + '</span>';
-    statusHTML += '<span class="fork-count">' + status.forks_count + '</span>';
+    statusHTML += '<i class="far fa-star">';
+    statusHTML += '</i>';
+
+    statusHTML += '<span class="star-count">'+ status.stargazers_count +'</span>';
+
+    statusHTML += '<i class="fa fa-code-fork">';
+    statusHTML += '</i>';
+
+    statusHTML += '<span class="star-count">'+ status.forks_count +'</span>';
+
+    statusHTML += '<span class="star-count">'+ status.created_at +'</span>';
 
     statusHTML += '</div>';
 
     statusHTML += '</div>';
+
     statusHTML += '</div>';
 
-    statusHTML += '<td>' + status.forks_count + '</td>';
-    statusHTML += '<td>' + status.created_at + '</td>';
+    statusHTML += '<div class="about-star">';
+    // statusHTML += '<div class="right-float">';
+    // statusHTML += '<button>';
+
+    // statusHTML += '<i class="far fa-star right-float-btn">';
+    // statusHTML += '</i>';
+
+    // statusHTML += '<span class="about-repo-star">'+Star+'</span>';
+
+    // statusHTML += '</button>';
+    // statusHTML += '</div>';
+    statusHTML += '</div>';
+
     statusHTML += '</li>';
   });
   $('.repofilter').html(statusHTML);
