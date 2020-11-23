@@ -105,7 +105,6 @@ body {
 
 .find-form div {
   padding: 10px;
-  border: 1px solid blue;
   display: inline;
   padding-left: 0;
   padding-right: 0;
@@ -120,9 +119,17 @@ body {
 }
 
 .repo-summ-container {
-  display: flex;
-  flex-direction: column-reverse;
-  border: 1px solid red;
+  display: block;
+}
+
+.find-section {
+  width: 100%;
+  order: 1;
+}
+
+.user-repo-list {
+  width: 100%;
+  order: 2;
 }
 
 .search-input {
@@ -405,6 +412,78 @@ footer div {
   padding-top: 25px;
 }
 
+.paginate-repo-list {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.btn-group-paginate {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.disable-btn {
+  color: rgba(3, 102, 314, 0.5);
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  box-shadow: none;
+  padding: 5px 16px;
+}
+
+.btn-group-paginate:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.btn-group-paginate button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-group-paginate:last-child {
+  border-right-width: 1px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.btn-item {
+  position: relative;
+  float: left;
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.btn-group-paginate a {
+  border-color: rgba(27, 31, 35, 0.15);
+  background-color: #fafbfc;
+  text-decoration: none;
+  color: #0366d6;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.paginate-btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 @media only screen and (min-width: 768px) {
   .main-container {
     display: grid;
@@ -558,6 +637,38 @@ footer div {
 
   .main-nav-mobile ul{
     display: inline;
+  }
+
+  .find-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-repo {
+    width: 100%;
+    order: 1;
+  }
+
+  .search-repo input {
+    width: 100%;
+  }
+
+  .type-lang-new {
+    width: 100%;
+    order: 2;
+  }
+
+  .type-lang-new {
+    display: inline;
+  }
+
+  .type-lang-new button {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .md-d-none {
+    display: none;
   }
 
 }
