@@ -52,10 +52,8 @@ request.onload = function () {
     statusHTML += '<div class="right-float">';
     statusHTML += '<button>';
 
-    statusHTML += '<i class="far fa-star right-float-btn">';
+    statusHTML += '<i class="far fa-star right-float-btn"><span class="about-repo-star">Star</span>';
     statusHTML += '</i>';
-
-    // statusHTML += '<span class="about-repo-star">'+ Star +'</span>';
 
     statusHTML += '</button>';
     statusHTML += '</div>';

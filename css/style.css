@@ -203,7 +203,11 @@ body {
   display: -moz-box;
   display: -moz-flex;
   -ms-box-orient: horizontal;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.footer-container li {
+  justify-content: space-evenly;
 }
 
 .wrap {
@@ -419,9 +423,18 @@ body {
 
 .repo-item {
   margin-right: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e4e8;
+  border-top: 1px solid #e1e4e8;
 }
 
-.title h3 a {
+.name h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title-name {
   text-decoration: none;
 }
 
@@ -453,6 +466,21 @@ body {
   top: 30%;
   right: 20px;
   top: 50px;
+}
+
+.right-float button {
+  cursor: pointer;
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #fafbfc;
+  border-radius: 6px;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+}
+
+.about-repo-star {
+  margin-left: 4px;
 }
 
 footer div {
