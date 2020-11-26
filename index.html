@@ -29,7 +29,7 @@
   <nav class="main-nav">
     <a href="#home" class="md-center"><i class="fab fa-github" style="font-size:35px;"></i></a>
     <div class="nav-left">
-      <input type="text" placeholder="Search or jump to...             &#xf096;">
+      <input type="text" placeholder="Search or jump to...             ">
       <a href="#">Pulls</a>
       <a href="#">Issues</a>
       <a href="#">Market-Place</a>
@@ -47,10 +47,10 @@
         <div class="main-container">
           <div class="header-nav">
             <nav class="header-container">
-              <a href="#"><i class="fas fa-book header-icon"></i></i><span>Overview</span></a>
+              <a href="#"><i class="fas fa-book header-icon"></i><span>Overview</span></a>
               <a href="#"><i class="far fa-folder header-icon"></i><span class="repo-text">Repositories</span><span class="h-count">92</span></a>
               <a href="#"><i class="fa fa-cube header-icon"></i><span>Packages</span></a>
-              <a href="#"><i class="far fa-file-alt header-icon"></i></i><span>Projects</span></a>
+              <a href="#"><i class="far fa-file-alt header-icon"></i><span>Projects</span></a>
             </nav>
           </div>
 
@@ -135,7 +135,7 @@
 
                   <div class="type-lang-new">
                     <details class="type-btn">
-                      <summary role="button" class="btn-type">Type: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
+                      <summary class="btn-type">Type: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
                       <ul>
                         <li>Select type</li>
                         <li>All</li>
@@ -149,7 +149,7 @@
                     </details>
 
                     <details class="type-btn">
-                      <summary role="button" class="btn-lang">Language: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
+                      <summary class="btn-lang">Language: All<i class="fa fa-caret-down type-caret" aria-hidden="true"></i></summary>
                       <ul>
                         <li>Select language</li>
                         <li>All</li>
@@ -164,7 +164,7 @@
                       </ul>
                     </details>
 
-                    <button class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
+                    <button type="submit" class="new-repo-btn"><i class='fas fa-book'></i><span>New</span></button>
                   </div>
 
                 </form>
@@ -208,7 +208,7 @@
 
                 <div class="paginate-repo-list">
                   <div class="btn-group-paginate">
-                    <button class="prev-btn btn-item disable-btn paginate-btn">Previous</button>
+                    <button type="button" class="prev-btn btn-item disable-btn paginate-btn">Previous</button>
                     <a href="/" class="next-btn btn-item paginate-btn">Next</a>
                   </div>
                 </div>
@@ -226,7 +226,9 @@
 
             <ul class="footer-container wrap">
 
-                <a href="#" class="md-d-none"><i class="fab fa-github f-github" style="font-size:30px;"></i></a>
+                <li class="wrap-item">
+                  <a href="#" class="md-d-none"><i class="fab fa-github f-github" style="font-size:30px;"></i></a>
+                </li>
 
                 <li class="wrap-item">
                     © 2020 GitHub, Inc.

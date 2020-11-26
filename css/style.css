@@ -40,6 +40,29 @@ body {
   padding-left: 10px;
 }
 
+.header-container a {
+  padding: 35px 16px 16px;
+}
+
+.header-container span,
+.contact-item span,
+.vault a {
+  color: #24292e;
+}
+
+.img-name-status > a {
+  text-align: center;
+}
+
+.btn-group-paginate a {
+  border-color: rgba(27, 31, 35, 0.15);
+  background-color: #fafbfc;
+  text-decoration: none;
+  color: #0366d6;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
 .main-nav a:not(:first-child) {
   padding-top: 24px;
 }
@@ -69,8 +92,8 @@ body {
 .main-container {
   display: grid;
   grid-template-areas:
-  'header-nav header-nav header-nav header-nav header-nav header-nav'
-  'profile-info-left repository-summary-right repository-summary-right repository-summary-right repository-summary-right repository-summary-right';
+    'header-nav header-nav header-nav header-nav header-nav header-nav'
+    'profile-info-left repository-summary-right repository-summary-right repository-summary-right repository-summary-right repository-summary-right';
 }
 
 .header-nav {
@@ -103,6 +126,11 @@ body {
   grid-area: repository-summary-right;
 }
 
+footer div {
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+
 .find-form div {
   padding: 10px;
   display: inline;
@@ -114,10 +142,6 @@ body {
   display: inline;
 }
 
-.search-input {
-  width: calc(90% - 5px - 61%);
-}
-
 .repo-summ-container {
   display: block;
 }
@@ -125,6 +149,8 @@ body {
 .find-section {
   width: 100%;
   order: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .user-repo-list {
@@ -137,6 +163,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   line-height: 20px;
+  width: calc(90% - 5px - 61%);
 }
 
 .type-lang-new button {
@@ -157,11 +184,6 @@ body {
 
 .new-repo-btn i {
   margin-right: 5px;
-}
-
-.find-section {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .type-btn > summary::-webkit-details-marker {
@@ -195,19 +217,49 @@ body {
   padding-left: 10px;
 }
 
+.wrap li {
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+.header-container a:link {
+  text-decoration: none;
+  color: #d1d5da;
+}
+
+.follow-fav a:link {
+  text-decoration: none;
+}
+
+.vault a:link {
+  text-decoration: none;
+}
+
+.wrap li a:link {
+  text-decoration: none;
+  color: #0366d6;
+}
+
 .footer-container {
   list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
-  display: -moz-box;
-  display: -moz-flex;
   -ms-box-orient: horizontal;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.footer-container li {
-  justify-content: space-evenly;
+.repofilter li {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-container li:nth-of-type(1) {
+  padding-top: 0 !important;
+}
+
+.footer-container li:not(:nth-of-type(1)) {
+  padding-top: 12px;
 }
 
 .wrap {
@@ -224,40 +276,15 @@ body {
   padding-top: 4px;
 }
 
-.wrap li {
-  padding-top: 8px;
-  font-size: 12px;
-}
-
-.wrap li a:link {
-  text-decoration: none;
-  color: #0366d6;
-}
-
 .header-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 14px
-}
-
-.header-container a {
-  padding: 35px 16px 16px;
+  font-size: 14px;
 }
 
 .header-container i {
   padding-right: 6px;
-}
-
-.header-container a:link {
-  text-decoration: none;
-  color: #d1d5da;
-}
-
-.header-container span,
-.contact-item span,
-.vault a {
-  color: #24292e;
 }
 
 .header-icon,
@@ -284,10 +311,6 @@ body {
 .img-name-status {
   position: relative;
   display: inline-block;
-}
-
-.img-name-status > a {
-  text-align: center;
 }
 
 .profile {
@@ -339,7 +362,6 @@ body {
   background-color: #fafbfc;
   cursor: pointer;
   border-radius: 6px;
-  background: transparent;
   border: 1px solid rgba(27, 31, 35, 0.15);
   font-weight: 500;
   margin-bottom: 16px;
@@ -360,10 +382,6 @@ body {
   font-weight: 600;
 }
 
-.follow-fav a:link {
-  text-decoration: none;
-}
-
 .fa-user-friends,
 .fa-star,
 .pr-5,
@@ -380,7 +398,7 @@ body {
 
 .contact-details {
   font-size: 14px;
-  line-height:180%
+  line-height: 180%;
 }
 
 .high-list,
@@ -394,10 +412,6 @@ body {
 .high-list {
   line-height: 2;
   font-size: 14px;
-}
-
-.vault a:link {
-  text-decoration: none;
 }
 
 .vault,
@@ -414,11 +428,6 @@ body {
 .repofilter {
   padding: 0;
   margin: 0;
-}
-
-.repofilter li {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .repo-item {
@@ -463,7 +472,6 @@ body {
 
 .right-float {
   position: absolute;
-  top: 30%;
   right: 20px;
   top: 50px;
 }
@@ -481,11 +489,6 @@ body {
 
 .about-repo-star {
   margin-left: 4px;
-}
-
-footer div {
-  padding-bottom: 40px;
-  padding-top: 25px;
 }
 
 .paginate-repo-list {
@@ -528,15 +531,6 @@ footer div {
   float: left;
   border-right-width: 0;
   border-radius: 0;
-}
-
-.btn-group-paginate a {
-  border-color: rgba(27, 31, 35, 0.15);
-  background-color: #fafbfc;
-  text-decoration: none;
-  color: #0366d6;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
 }
 
 .paginate-btn {
@@ -596,9 +590,9 @@ footer div {
   .main-container {
     display: grid;
     grid-template-areas:
-    'profile-info-left profile-info-left profile-info-left profile-info-left profile-info-left'
-    'header-nav header-nav header-nav header-nav header-nav'
-    'repository-summary-right repository-summary-right repository-summary-right repository-summary-right repository-summary-right';
+      'profile-info-left profile-info-left profile-info-left profile-info-left profile-info-left'
+      'header-nav header-nav header-nav header-nav header-nav'
+      'repository-summary-right repository-summary-right repository-summary-right repository-summary-right repository-summary-right';
   }
 
   .main-container div:nth-of-type(1) {
@@ -631,9 +625,9 @@ footer div {
   .contact-section {
     display: grid;
     grid-template-areas:
-    'edit-button edit-button edit-button edit-button edit-button'
-    'contact-details contact-details contact-details contact-details contact-details'
-    'follow-fav follow-fav follow-fav follow-fav follow-fav';
+      'edit-button edit-button edit-button edit-button edit-button'
+      'contact-details contact-details contact-details contact-details contact-details'
+      'follow-fav follow-fav follow-fav follow-fav follow-fav';
   }
 
   .contact-section div:nth-of-type(1) {
@@ -651,9 +645,9 @@ footer div {
   .img-name-status {
     display: grid;
     grid-template-areas:
-    'profile display-name-bio . . .'
-    'user-status user-status user-status user-status user-status'
-    'bio-text bio-text bio-text bio-text bio-text';
+      'profile display-name-bio . . .'
+      'user-status user-status user-status user-status user-status'
+      'bio-text bio-text bio-text bio-text bio-text';
   }
 
   .img-name-status img:nth-of-type(1) {
@@ -670,6 +664,11 @@ footer div {
   .img-name-status div:nth-of-type(2) {
     grid-area: bio-text;
     margin-top: 16px;
+  }
+
+  .main-nav-mobile a {
+    color: #f2f2f2;
+    padding: 14px 16px;
   }
 
   .img-name-status a:nth-of-type(1) {
@@ -706,12 +705,7 @@ footer div {
     transform: translate(-50%, -50%);
   }
 
-  .main-nav-mobile a {
-    color: #f2f2f2;
-    padding: 14px 16px;
-  }
-
-  .main-nav-mobile ul{
+  .main-nav-mobile ul {
     display: inline;
   }
 
@@ -734,9 +728,6 @@ footer div {
   .type-lang-new {
     width: 100%;
     order: 2;
-  }
-
-  .type-lang-new {
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
@@ -749,5 +740,4 @@ footer div {
   .md-d-none {
     display: none;
   }
-
 }
