@@ -159,11 +159,11 @@ footer div {
 }
 
 .search-input {
+  width: calc(90% - 5px - 61%);
   padding-left: 2px;
   padding-top: 5px;
   padding-bottom: 5px;
   line-height: 20px;
-  width: calc(90% - 5px - 61%);
 }
 
 .type-lang-new button {
@@ -246,7 +246,7 @@ footer div {
   padding: 0;
   margin: 0;
   -ms-box-orient: horizontal;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .repofilter li {
@@ -612,6 +612,10 @@ footer div {
     display: none;
   }
 
+  .repofilter li {
+    flex-direction: row;
+  }
+
   .contact-details li:nth-of-type(1),
   .contact-details li:nth-of-type(2),
   .contact-details li:nth-of-type(5) {
@@ -697,6 +701,10 @@ footer div {
     float: right;
   }
 
+  .user-repo-list {
+    padding: 20px;
+  }
+
   .nav-left-mobile {
     float: none;
     position: absolute;
@@ -726,11 +734,11 @@ footer div {
   }
 
   .type-lang-new {
-    width: 100%;
-    order: 2;
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
+    order: 2;
   }
 
   .type-lang-new button {
