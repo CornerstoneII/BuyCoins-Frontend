@@ -38,9 +38,9 @@ request.onload = function () {
     statusHTML += '<i class="fa fa-code-fork">';
     statusHTML += '</i>';
 
-    statusHTML += '<span class="star-count">'+ status.forks_count +'</span>';
+    statusHTML += '<span class="fork-count">'+ status.forks_count +'</span>';
 
-    statusHTML += '<span class="star-count">'+ status.created_at +'</span>';
+    statusHTML += '<span class="about-date">'+ status.created_at +'</span>';
 
     statusHTML += '</div>';
 
@@ -49,16 +49,16 @@ request.onload = function () {
     statusHTML += '</div>';
 
     statusHTML += '<div class="about-star">';
-    // statusHTML += '<div class="right-float">';
-    // statusHTML += '<button>';
+    statusHTML += '<div class="right-float">';
+    statusHTML += '<button>';
 
-    // statusHTML += '<i class="far fa-star right-float-btn">';
-    // statusHTML += '</i>';
+    statusHTML += '<i class="far fa-star right-float-btn">';
+    statusHTML += '</i>';
 
-    // statusHTML += '<span class="about-repo-star">'+Star+'</span>';
+    // statusHTML += '<span class="about-repo-star">'+ Star +'</span>';
 
-    // statusHTML += '</button>';
-    // statusHTML += '</div>';
+    statusHTML += '</button>';
+    statusHTML += '</div>';
     statusHTML += '</div>';
 
     statusHTML += '</li>';
