@@ -2,9 +2,9 @@
 
 > This project is about recreation (clone) of my github account, it also includes the display of a total maximum of 20 repositories using the graphql github API.
 
-![MObile Device](./image/sm.jpg)
-![Tablet Device](./image/md.jpg)
-![Large Device](./image/lg.jpg)
+![MObile Device](./image/sm.jpeg)
+![Tablet Device](./image/md.jpeg)
+![Large Device](./image/lg.jpeg)
 
 ## Built With
 
@@ -14,7 +14,7 @@
 - Javascript (Vanilla)
 
 ## Getting Started
-[Demo]()
+[Demo](https://raw.githack.com/CornerstoneII/BuyCoins-Frontend/front-dev/index.html)
 
 ## Getting Started
 
