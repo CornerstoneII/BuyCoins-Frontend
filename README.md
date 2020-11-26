@@ -11,7 +11,7 @@
 - HTML5
 - CSS3
 - [GraphQL GitHub API](https://developer.github.com/v4/explorer/)
-- Javascript (Vanilla)
+- Javascript (JQuery)
 
 ## Getting Started
 [Demo](https://raw.githack.com/CornerstoneII/BuyCoins-Frontend/front-dev/index.html)
@@ -38,7 +38,9 @@ git clone https://github.com/CornerstoneII/BuyCoins-Frontend.git
 
 ```sh
 index.html
-``` select
+```
+
+6) Select
 ```sh
 Open with Live Server
 ```
